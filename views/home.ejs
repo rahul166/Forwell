@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MakeMyMini</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Great+Vibes|Vollkorn|Marcellus+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" type="text/css" href="stylesheet/style.css"></link>
+
+</head>
+<!-- <style>
+    @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC&display=swap');
+
+.container {
+    width: 1007px;
+}
+body{
+    margin: 0px;
+padding: 0px;
+height: 100%;
+width: 100%;
+}
+.header-top{
+    background-color: #e05606;
+    height:35px;
+
+}
+.header-top h6,a{
+    font-size:14px;
+    color:white;
+
+}
+.header-top i{
+    padding:4px;
+    size:20px;
+}
+.header-top i:hover{
+    color:rgb(228, 218, 218)
+}
+.header{
+    color: black;
+    background-color: white;
+    height: 78px;
+    box-shadow: 1px 2px 21px #d6d0d0;
+    font-family: 'IM Fell Great Primer SC', serif;
+
+}
+.header .btn{
+    border-radius: 14px;
+    background-color: #e05606;
+    color: white;
+    margin-top: 5px;
+}
+.header li a:hover{
+    border-bottom: 2px solid red;
+    border-radius: 1px;
+    background-color:none;
+}
+.header ul{
+    line-height: 56px;
+    height: 56px;
+    margin-top:30px;
+
+}
+.header .navigation li a{
+    color:black;
+    font-weight:bold;
+
+}
+.header img{
+    float: left;
+    width: 200px;
+    height: 52px;
+    margin-top: 11px;
+
+}
+***********SLIDER start**********************
+.fade-carousel {
+    position: relative;
+    height: 50vh;
+}
+.fade-carousel .carousel-inner .item {
+    height:50vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+******************************
+          Hero Headers        
+******************************
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h2 {
+    font-size: 5em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+******************************
+            Overlay           
+******************************
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .5;
+}
+
+******************************
+          Custom Buttons      
+******************************
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: white;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+******************************
+       Slides backgrounds     
+******************************
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5 {
+  height: 82vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url("../images/sliderimg1.jpg"); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url("../images/sliderimg2.jpeg");
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url("../images/sliderimg3.jpg");
+}
+.fade-carousel .slides .slide-4 {
+    background-image: url("../images/sliderimg4.jpg");
+}
+.fade-carousel .slides .slide-5 {
+    background-image: url("../images/sliderimg5.png");
+}
+
+******************************
+          Media Queries       
+******************************
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h2 { font-size: 4em; }    
+}
+
+***********SLIDER END******************
+.heading{
+    margin-top:67px;
+}
+.content1{
+    height:475px;
+    background-color: #f1f9fa;
+
+}
+.content1 p,h5,.content2 h4,.reviews h3,h4{
+    font-family: 'Vollkorn', serif;
+}
+.content1 h4{
+    font-family: 'Kaushan Script', cursive;text-align:center;letter-spacing: 4px; line-height: 30px;
+}
+.content1 .sub-content1{
+    margin-top:60px;
+}
+.content2 h4{
+    line-height: 28px;
+    margin-top: 30px;
+}
+.content2{
+    background-color: black;
+    color:white;
+    height:450px;
+}
+.content2 button{
+    border-radius: 17px;
+    padding: 8px 17px;
+    color: black;
+    margin-top: 29px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.reviews  img{
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.reviews h5{
+    letter-spacing: 2px;
+    margin-top: 38px;
+    line-height: 18px;
+    color:black;
+    height:110px;
+
+}
+.footer{
+    background-color: #363636;
+    color:white;
+    height:238px;
+}
+.footer .footer-content h4,h5,a{
+    color:white;
+    line-height:1;
+    font-weight:normal;
+    letter-spacing:1px;
+
+
+}
+.footer h4{
+    margin-left:39px;
+    color: gray;
+    font-weight: bold;
+}
+.footer-content{
+    padding:40px 40px;
+}
+.footer i{
+    margin-top: 9px;
+    padding: 9px;
+    font-size: 23px;
+}
+.footer a:hover{
+   color:#fef7f7bf;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer .col-md-2{
+    width: 31.666667%;
+}
+</style> -->
+<body>
+    <section class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>YOU IMAGINE WE PRINT</h6>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-2 text-right" >
+                    <a href="www.facebbok.com" data-toggle="tooltip" title="Follow us on facebook"><i class="fa fa-facebook-f"></i></a>
+                    <a href="www.twitter.com" data-toggle="tooltip" title="Follow us on twitter"><i class="fa fa-twitter"></i> </a>   
+                    <a href="www.instagram.com" data-toggle="tooltip" title="Follow us on instagram"><i class="fa fa-instagram"></i></a>   
+                    <a href="#" data-toggle="tooltip" title="Follow us on google"><i class="fa fa-google-plus" ></i></a>
+                </div>
+                <div class="col-md-2">
+                    <h6>info@makemymini.com</h6>
+                </div>
+            </div>
+        
+
+        </div>
+    </section>
+    <section class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo"></div>
+                        <img src="images/logo.jpg" alt="">
+                    </div>       
+                </div>
+                <div class="col-md-10">
+                    <div class="navigation">
+                        
+                        <ul class="nav nav-pills navbar-right">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="team.html">PRODUCTS</a></li>
+                            <li><a href="center.html">BLOG</a></li>
+                            <li><a href="involve.html">CONTACT US</a></li>
+                            
+                            <li>
+                                <a href="#">Login & Signup</a>
+                            </li>
+                            <li><button type="button" class="btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                Cart  
+                                </button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+                    <!-- Overlay -->
+                    <div class="overlay"></div>
+                  
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#bs-carousel" data-slide-to="1"></li>
+                      <li data-target="#bs-carousel" data-slide-to="2"></li>
+                      <li data-target="#bs-carousel" data-slide-to="3"></li>
+                      <li data-target="#bs-carousel" data-slide-to="4"></li>
+                    </ol>
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item slides active">
+                        <div class="slide-1"></div>
+                        <div class="hero">
+                          <hgroup>
+                              <h2>SHOP THE LATEST GIFTS</h2>        
+                          </hgroup>
+                        </div>
+                      </div>
+                      <div class="item slides">
+                        <div class="slide-2"></div>
+                        <div class="hero">        
+                          <hgroup>
+                              <h2>SPECIAL MINIATURE FOR SPECIAL ONES</h2>        
+                          </hgroup>       
+                        </div>
+                      </div>
+                      <div class="item slides">
+                        <div class="slide-3"></div>
+                        <div class="hero">        
+                          <hgroup>
+                              <h2>BEST MARRIAGE GIFTS FOR YOYR PARTNER</h2>        
+                          </hgroup>
+                        </div>
+                      </div>
+                      <div class="item slides">
+                        <div class="slide-4"></div>
+                        <div class="hero">        
+                          <hgroup>
+                              <h2>SPECIAL MINIATURE FOR SPECIAL ONES</h2>        
+                          </hgroup>       
+                        </div>
+                      </div>
+                      <div class="item slides">
+                        <div class="slide-5"></div>
+                        <div class="hero">        
+                          <hgroup>
+                              <h2>BEST GIFTS FOR COUPLES ON THEIR WEDDING</h2>        
+                          </hgroup>       
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section class="content1">
+        <div class="container-fluid">
+            <div class="heading text-center" >
+                <h3 style="font-family: 'Marcellus SC', serif; font-weight: bolder;">YOU SEND US A PHOTO, WE SEND YOU A 3D SELFIE</h3>
+                <h5>Getting a 3d Miniature/ selfie is super easy! Please follow the instructions below:</h5>
+             </div>
+            <div class="row">
+                <div class="sub-content1">
+                <div class="col-md-3">
+                        <h4 >SEND US YOUR PHOTOS</h4><br>
+                        <p>Take several photos of yourself. One photos have to be exactly in a Pose you would
+                                Like to Miniature. One frontal image, left view, right view and whole body. You just 
+                                need to send us 4 high quality photos. Or Upload your photos when you are ordering your
+                                Miniature.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="font-family: 'Kaushan Script', cursive;text-align:center;">WE REVIEW YOUR PHOTOS</h4><br>
+                        <p>Take several photos of yourself. One photos have to be exactly in a Pose you would
+                                Like to Miniature. One frontal image, left view, right view and whole body. You just 
+                                need to send us 4 high quality photos. Or Upload your photos when you are ordering your
+                                Miniature.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="font-family: 'Kaushan Script', cursive;text-align:center;">WE MODEL IT</h4><br>
+                        <p>Take several photos of yourself. One photos have to be exactly in a Pose you would
+                                Like to Miniature. One frontal image, left view, right view and whole body. You just 
+                                need to send us 4 high quality photos. Or Upload your photos when you are ordering your
+                                Miniature.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="font-family: 'Kaushan Script', cursive;text-align:center;"> TIME TO PRINT</h4><br>
+                        <p>Take several photos of yourself. One photos have to be exactly in a Pose you would
+                                Like to Miniature. One frontal image, left view, right view and whole body. You just 
+                                need to send us 4 high quality photos. Or Upload your photos when you are ordering your
+                                Miniature.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="content2">
+        <div class="container-fluid text-center">
+            <div class="heading">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                        <h2 style="font-family: 'Marcellus SC', serif; font-weight: bolder;">BECOME AN AFFILIATE</h2>
+                        <h4>Having an good audience on social media profile and have an enthusiasm to do some trending & 
+                            creative work, then become our affiliate.</h4>
+                            <button type="default" class="btn">Apply Now</button>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container-fluid text-center">
+            <h3 style="letter-spacing:5px;margin-top:30px;"><b>LATEST REVIEWS</b></h3>
+            <div class="row">
+                <div class="people-review">
+                    <div class="col-md-4">
+                        <img src="images/person3.jpg" width="88px" height"86px" alt="">
+                        <h5><i>
+                                I got my “3D miniature” for MakeMyMini and Loved It.
+                                 The Exact replica of 4″ Size was Really great. Well Done MakeMyMini ! Well Done…
+
+                            </i>
+                            <b>Dilip Joshi</b>/ Rajsamad, Rajasthan        
+                        </h5>
+                    </div>
+                    <div class="col-md-4">
+                            <img src="images/person2.jpg" width="88px" height"86px" alt="">
+                        <h5><i>
+                                I got my “3D miniature” for MakeMyMini and Loved It.
+                                    The Exact replica of 4″ Size was Really great. Well Done MakeMyMini ! Well Done…
+
+                            </i>
+                            <b>Dilip Joshi</b>/ Rajsamad, Rajasthan        
+                        </h5>
+                    </div>
+                    <div class="col-md-4">
+                            <img src="images/person1.png" width="88px" height"86px" alt="">
+                        <h5><i>
+                                I got my “3D miniature” for MakeMyMini and Loved It.
+                                    The Exact replica of 4″ Size was Really great. Well Done MakeMyMini ! Well Done…
+
+                            </i>
+                            <span style="margin-top:20px;"><b>Dilip Joshi</b>/ Rajsamad, Rajasthan </span>       
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+   <section class="footer" style="background-color:#19191b;">
+        <div class="container-fluid  text-center">
+                <div class="row" style="margin-top: 46px;">
+                    <div class="col-md-6">
+                        <div class="col-md-2 text-center">
+                            <h4>ABOUT</h4>
+                            <ul><li><a href="">ABOUT US</a></li>
+                           <li><a href="">CONTACT US</a></li>
+                            <li><a href="">MakeMYMini STORIES </a></li>
+                            <li><a href="">PRESS</a></li></ul>
+
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <h4>HELP</h4>
+                            <ul>
+                            	<li><a href="">Payment</a></li>
+                          		<li><a href="">Shipping</a></li>
+                        		 <li><a href="">Cancellation </a></li>
+                          		<li><a href="">ReturnsS</a></li>
+                            	<li><a href="">FAQ</a></li>
+                           		<li><a href="">Reports</a></li>
+                           	</ul>
+                        </div>
+                      <div class="col-md-2">
+                            <h4>SOCIAL</h4>
+                            <ul>
+                            	<li><a href="#">Facebook</a></li>
+                            <li><a href="#">Youtube</a></li>
+                            <li><a href="#">Twitter </a></li></ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>REGISTERED OFFICE ADDRESS</h4>
+                         <h5>Forewell Lifecare Pvt. Ltd.,
+                             Samarth Colony,Umariya,Indore(M.P.)
+                              
+
+                         </h5>
+                    </div>
+                </div>
+            </div>
+    </slider>
+    
+    
+            
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="js/bootstrap.js"></script>  
+    <script src="js/mystyle.js"></script> 
+</body>
+</html>
+
+
+
+
+
