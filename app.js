@@ -23,9 +23,8 @@ app.get("/contact",function(req, res) {
 })
 
 
-app.listen(3000,process.env.IP,function(){
-    console.log("web started");
+app.listen(process.env.PORT || 4000, function(){
+    console.log('Your node js server is running');
 });
-
 
 
