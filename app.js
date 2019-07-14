@@ -25,7 +25,6 @@ app.get("/blog",function(req, res) {
    res.render("blog"); 
 });
 
-
-app.listen(8081||4000,function(){
-    console.log("web started");
+app.listen(process.env.PORT || 4000, function(){
+    console.log('Your node js server is running');
 });
