@@ -26,6 +26,6 @@ app.get("/blog",function(req, res) {
 });
 
 
-app.listen(3000,process.env.IP,function(){
+app.listen(8081||4000,function(){
     console.log("web started");
 });
